@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #00FF00;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: glowing 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Efecto de círculo alrededor del título */
+        .circle-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .circle {
+            position: absolute;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            padding: 20px;
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            animation: rotateCircle 4s linear infinite;
+        }
+
+        h1 span {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Efecto de luces LED */
+        @keyframes glowing {
+            0% { color: #000000; text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #ffffff; }
+            50% { color: #1f1be4; text-shadow: 0 0 5px #1f1be4, 0 0 10px #1f1be4, 0 0 15px #1f1be4 0 0 20px #ffffff; }
+            100% { color: #ffffff; text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #000000; }
+        }
+
+        @keyframes rotateCircle {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Estilo del texto */
+        .content {
+            font-size: 15px;
+            text-align: justify;
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgb(255, 255, 255);
+        }
+
+        /* Media Queries para pantallas pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px; /* Reducir el tamaño del título */
+            }
+
+            .circle {
+                padding: 15px; /* Reducir el tamaño del círculo */
+                width: calc(100% + 30px); /* Reducir el tamaño del círculo */
+                height: calc(100% + 30px);
+            }
+
+            .content {
+                font-size: 14px; /* Reducir el tamaño de la fuente en pantallas más pequeñas */
+                padding: 15px; /* Reducir padding en la sección de contenido */
+            }
+        }
+
+        /* Media Queries para dispositivos móviles (pantallas muy pequeñas) */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px; /* Reducir aún más el tamaño del título */
+            }
+
+            .circle {
+                padding: 10px; /* Reducir el tamaño del círculo */
+                width: calc(100% + 20px); /* Reducir aún más el tamaño del círculo */
+                height: calc(100% + 20px);
+            }
+
+            .content {
+                font-size: 12px; /* Reducir aún más el tamaño de la fuente */
+                padding: 10px; /* Reducir el padding del contenido */
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="circle-container">
+            <div class="circle"></div>
+            <h1><span>Introducción al Módulo II: Aplicación de Metodologías de Desarrollo de Software con Herramientas de Programación Visual</span></h1>
+        </div>
+    </center>
+
+    <div class="content">
+        <h3>
+            En el contexto actual de la transformación digital, el desarrollo de software se ha convertido en un pilar fundamental para la creación de soluciones tecnológicas que atiendan necesidades reales en todos los sectores productivos y sociales. El Módulo II de la asignatura TPROG (Tecnologías de Programación) tiene como propósito principal proporcionar al estudiante una comprensión profunda y aplicada de las metodologías de desarrollo de software, así como el uso eficiente de herramientas de programación visual para llevar a cabo proyectos tecnológicos de forma estructurada, efectiva y profesional.
+            <br><br>
+            Este módulo no solo introduce al alumno a las prácticas más utilizadas en la industria del software, sino que también fortalece habilidades de análisis, diseño y solución de problemas mediante la implementación de aplicaciones funcionales con interfaces gráficas amigables, modernas e intuitivas. A través de este enfoque, se busca que el estudiante adquiera competencias técnicas y metodológicas que lo preparen para integrarse de manera competitiva en equipos de desarrollo de software del mundo real.
+            <br><br>
+            Una de las bases de este módulo es la aplicación de metodologías ágiles y tradicionales (como el modelo en cascada, espiral, prototipos, Scrum, entre otros), entendiendo sus etapas, ventajas, limitaciones y contextos de uso. Estas metodologías permiten gestionar eficientemente el ciclo de vida del desarrollo de software, desde la recopilación de requisitos hasta la entrega final, promoviendo la colaboración, la adaptabilidad al cambio y la mejora continua.
+            <br><br>
+            Complementariamente, el módulo hace énfasis en el uso de herramientas de programación visual, que representan una forma moderna e intuitiva de construir software utilizando entornos de desarrollo donde los elementos gráficos, controles visuales y eventos son componentes clave. Lenguajes como Visual Basic, C# con Windows Forms o WPF, y herramientas como Visual Studio permiten al estudiante enfocarse no solo en la lógica del código, sino también en la experiencia del usuario (UX), diseño de interfaces (UI) y la interacción entre elementos de manera más tangible.
+            <br><br>
+            Durante el desarrollo del módulo, los estudiantes participarán en actividades prácticas, creación de prototipos, análisis de casos, y desarrollo de aplicaciones completas, lo que les permitirá aplicar los conocimientos teóricos en situaciones reales o simuladas. Se promoverá el trabajo colaborativo, la documentación técnica, y el uso de herramientas de control de versiones como Git, con el fin de reforzar hábitos profesionales y metodológicos en el proceso de desarrollo.
+            <br><br>
+            En resumen, este módulo constituye una etapa clave en la formación de futuros desarrolladores y técnicos en programación, ya que ofrece una visión integral del proceso de desarrollo de software, conjugando técnicas formales, herramientas modernas y metodologías reconocidas. A través de la programación visual y el pensamiento lógico, el estudiante aprenderá a convertir ideas en soluciones digitales tangibles, funcionales y de alto valor agregado.
+        </h3>
+    </div>
+
+</body>
+</html>
