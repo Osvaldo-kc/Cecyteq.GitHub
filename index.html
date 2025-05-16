@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Parcial</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            color: #00FF00;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: glowing 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Efecto de luces LED */
+        @keyframes glowing {
+            0% { color: #079aa5; text-shadow: 0 0 5px #079aa5, 0 0 10px #079aa5, 0 0 15px #079aa5, 0 0 20px #ffffff; }
+            50% { color: #079aa5; text-shadow: 0 0 5px #079aa5, 0 0 10px #079aa5, 0 0 15px #079aa5, 0 0 20px #ffffff; }
+            100% { color: #ffffff; text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff 0 0 20px #079aa5; }
+        }
+
+        /* Estilos del botón */
+        .boton-estilo {
+            background-color: #FFD700; /* Amarillo dorado */
+            color: #4B0082; /* Morado oscuro para el texto */
+            border: none;
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 0 5px #FFD700, 0 0 15px #FFD700, 0 0 20px #FFD700;
+        }
+
+        .boton-estilo:hover {
+            background-color: #FFC300; /* Un tono más oscuro al pasar el cursor */
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #FFC300, 0 0 30px #FFC300;
+        }
+
+        /* Estilo de los botones centrados */
+        center {
+            margin: 20px;
+        }
+
+        .fondo {
+            background-color: #121212;
+        }
+
+        /* Media Queries para pantallas pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 30px; /* Reducir el tamaño del título */
+            }
+
+            .boton-estilo {
+                font-size: 14px; /* Reducir tamaño de fuente del botón */
+                padding: 10px 20px; /* Reducir el padding del botón */
+            }
+
+            center {
+                margin: 10px; /* Reducir margen */
+            }
+        }
+
+        /* Media Queries para pantallas muy pequeñas (dispositivos móviles) */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px; /* Título más pequeño en pantallas móviles */
+            }
+
+            .boton-estilo {
+                font-size: 12px; /* Reducir aún más el tamaño de los botones */
+                padding: 8px 16px; /* Reducir el padding del botón */
+            }
+
+            center {
+                margin: 5px; /* Ajustar márgenes */
+            }
+        }
+    </style>
+</head>
+<body class="fondo">
+    <h1>Segundo Parcial</h1>
+
+    <center>
+        <button class="boton-estilo" onclick="window.location.href='file:///D:/Tercer%20Parcial/Act%2018/Introducci%C3%B3n.html';">Introducción</button>
+        <button class="boton-estilo" onclick="window.location.href='file:///D:/Tercer%20Parcial/Act%2018/Videos.html';">Videos</button>
+    </center>
+
+</body>
+</html>
+
+
+
